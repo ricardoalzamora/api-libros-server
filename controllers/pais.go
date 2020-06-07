@@ -8,7 +8,7 @@ import (
 	"github.com/ricardoalzamora/books_server/services"
 )
 
-func GetPaises(c *gin.Context) {
+func GetAllPaises(c *gin.Context) {
 	var paises []models.Pais
 	err := services.GetAllPaises(&paises)
 	if err != nil {

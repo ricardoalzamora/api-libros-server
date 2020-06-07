@@ -10,7 +10,7 @@ func SetupRouter() *gin.Engine {
 
 	v1 := r.Group("/v1")
 	{
-		v1.GET("pais", controllers.GetPaises)
+		v1.GET("pais", controllers.GetAllPaises)
 		v1.POST("pais", controllers.CreateAPais)
 		v1.GET("pais/:id", controllers.GetAPais)
 		v1.PUT("pais/:id", controllers.UpdateAPais)
